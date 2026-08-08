@@ -1,0 +1,35 @@
+#left-navbar {
+  background-color: var(--nav-bg);
+  width: 15%;
+  height: 100vh;
+  border-right: 1px solid var(--navbar-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#left-navbar .pages-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#left-navbar .title {
+  padding: 0.5rem 0rem 0rem 1rem;
+  color: var(--primary-700);
+}
+
+#left-navbar a {
+  color: var(--nav-text);
+  text-decoration: none;
+  border-radius: 10px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+#left-navbar a:hover {
+  background-color: var(--nav-hover-bg);
+  color: var(--primary-hover);
+}

@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+dist/
+node_modules/
+
+# Local database
+*.db
+*.db-shm
+*.db-wal
+
+# Editor / OS
+.vs/
+.vscode/
+.idea/
+*.user
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+

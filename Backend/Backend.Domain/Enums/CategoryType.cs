@@ -1,4 +1,4 @@
-﻿namespace Backend.Domain.Enums
+namespace Backend.Domain.Enums
 {
     public enum CategoryType
     {
@@ -6,3 +6,4 @@
         Expense = 2
     }
 }
+

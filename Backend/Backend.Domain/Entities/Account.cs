@@ -95,15 +95,17 @@ public sealed class Account : AuditableEntity
                 "Balance adjustment cannot be zero.");
         }
 
-        var newBalance = Balance + difference;
+        Balance += difference;
 
-        if (newBalance < 0)
-        {
-            throw new InvalidOperationException(
-                "Balance cannot become negative.");
-        }
+        MarkAsUpdated();
+    }
 
-        Balance = newBalance;
+    public void UpdateDetails(string name, AccountType type, Currency currency)
+    {
+        UpdateName(name);
+
+        Type = type;
+        Currency = currency;
 
         MarkAsUpdated();
     }
@@ -146,3 +148,4 @@ public sealed class Account : AuditableEntity
         }
     }
 }
+

@@ -1,52 +1,123 @@
-import "../styles/Dashboard.css";
-// import LeftNavbar from "../components/LeftNavbar.tsx";
-import TopNavbar from "../components/TopNavbar.tsx";
+import { useNavigate } from "react-router-dom";
+import Icon from "../components/Icon";
+import { ErrorBanner, LoadingState, ProgressBar } from "../components/ui";
+import { categoryIcon } from "../lib/icons";
+import { formatMoney } from "../lib/utils";
+import { useFinanceStore } from "../store/useFinanceStore";
+import type { Budget } from "../types/api";
 
-function Main() {
-  return (
-    <>
-      <section id="screen">
-        <TopNavbar />
-        <h1>This is dashboard page</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aperiam facere non minus debitis delectus possimus doloremque velit, fugiat ipsum sapiente quaerat ipsam esse architecto deserunt rem. Ullam, porro tempora
-          repellendus molestias voluptatem voluptatum vitae iste ea fugiat maxime quidem at inventore aperiam est, eum nostrum ad quis laboriosam alias temporibus. Magni, adipisci quisquam! Veniam provident aperiam, incidunt enim nulla
-          ipsum delectus voluptatum animi quos blanditiis facere doloribus quibusdam atque necessitatibus officia asperiores ex. Ratione porro dolor alias esse molestiae quam, similique eos non atque facere dicta possimus repellat! Quam
-          quos, voluptate illo illum eligendi nulla, quae aliquid fugit ducimus sequi a odio? Culpa quia possimus eos adipisci molestias doloribus totam aliquam odit quidem dolor numquam quos illum debitis atque nihil, ad expedita
-          blanditiis velit voluptas ullam sequi mollitia! Natus corporis laudantium possimus similique. Quibusdam molestias sed debitis omnis non aliquid porro maiores laboriosam cumque autem dolores expedita praesentium consectetur quos
-          deleniti ex, minus soluta pariatur laudantium repudiandae corrupti ad cum incidunt. Officiis incidunt expedita sequi quaerat tempore suscipit beatae quidem adipisci, cupiditate eum animi explicabo consequuntur corporis. Hic,
-          laborum provident officia eligendi distinctio aperiam in asperiores non veniam repudiandae ullam? Vitae eius inventore, deleniti vel dolor eos dolores delectus quisquam commodi odit obcaecati? Cumque voluptate amet, repellendus
-          impedit quidem eum ratione perspiciatis placeat pariatur reprehenderit assumenda, molestias quas sapiente porro dolore aliquam magni! Deserunt perferendis nobis ea nemo tempora soluta, optio quasi. Earum dicta maxime ratione alias
-          ipsum a sunt ad minus fugiat suscipit obcaecati sed placeat, odit saepe voluptatibus facere delectus ea quibusdam mollitia esse nisi tenetur. Quaerat ut aliquid architecto, odit expedita dignissimos! Molestias, quas. Cum
-          praesentium suscipit deserunt amet, a corrupti culpa molestiae consequuntur adipisci asperiores non explicabo, doloremque tenetur et qui accusantium. Praesentium nobis molestiae fuga libero. Dicta accusamus nemo quas laudantium ea
-          ullam at quidem consectetur illo exercitationem officiis aperiam, natus consequuntur culpa quam similique quae, omnis perspiciatis autem libero modi tempora mollitia ab! Aut, numquam impedit dignissimos animi iste quisquam amet
-          doloremque possimus deserunt voluptates, vel asperiores provident dicta error excepturi quibusdam! Ratione consequuntur aperiam nesciunt, assumenda amet alias distinctio, temporibus unde et cum fugiat culpa, eius provident
-          voluptates vitae. Fuga adipisci corporis illum esse, eum tenetur dolorum cupiditate quasi! Dignissimos tempora exercitationem assumenda asperiores, beatae perferendis, et dolore deserunt fugit aut fugiat explicabo quibusdam quia,
-          harum doloribus! Recusandae reiciendis alias inventore! Placeat, labore? Quisquam, doloremque? Dolor harum quo nobis, non architecto tempore numquam id ex blanditiis, obcaecati illo soluta exercitationem amet magnam, ratione
-          nostrum. Asperiores nam in sunt odio nesciunt facere eos dolorem ullam quidem excepturi, sequi cupiditate. Reprehenderit perferendis eos vitae ipsum, debitis omnis esse eum explicabo exercitationem dolores inventore nam voluptas
-          et ex magni dolor commodi recusandae tenetur sunt repellendus consequuntur corporis error. Illum, temporibus maxime aut officiis cum quos, nemo, voluptatibus delectus omnis eum est minus impedit accusamus fuga dolorum ex eligendi
-          laborum facilis fugiat iure recusandae architecto ullam quis. Officia magni, iure corporis odit obcaecati sunt soluta, dignissimos in necessitatibus voluptatum iste harum eius! Consequatur doloremque saepe, quis aspernatur
-          dolores, unde magni nesciunt debitis, necessitatibus quod dolore corrupti! Soluta animi officia veniam facere reprehenderit quibusdam velit odio ab! Sit et architecto officia id quos, ullam in quo illo dolore quia consequuntur,
-          provident itaque facere animi pariatur eius atque? Modi fugit magnam illo ullam praesentium hic, consequuntur culpa recusandae corrupti provident ipsam maiores saepe error id cumque, dolores numquam accusamus delectus ad nesciunt
-          aliquam voluptas itaque esse blanditiis. Inventore sequi pariatur vitae ipsum placeat cupiditate dignissimos, dolorum, consequatur tempora perferendis eius consectetur beatae temporibus voluptatum iure provident doloremque.
-          Exercitationem cupiditate qui tempora quam expedita deserunt obcaecati facere ratione natus! Maiores, pariatur exercitationem! Obcaecati, veniam! Possimus neque quasi eveniet voluptatibus id alias, eius et, culpa ad repudiandae,
-          autem quae nostrum labore beatae exercitationem? Corporis accusamus fugiat in molestias doloribus eaque perferendis non dolorem rem architecto commodi, voluptatibus fugit soluta et sed officiis quo iste. Culpa quo praesentium
-          fugit minus. Praesentium, nostrum non magnam maxime neque itaque veniam esse odit eum. Laborum doloremque, quis earum nihil illo officiis beatae nobis repudiandae quae libero reiciendis inventore at tempora deleniti. Quaerat,
-          perspiciatis tenetur. Totam nemo dolorem nulla laborum tempore rerum ipsam mollitia perspiciatis quisquam sunt ullam fugit vitae, ad quia consequatur autem omnis soluta doloremque quas maxime aperiam eius numquam. Voluptates,
-          consequatur unde deserunt maxime ipsum labore voluptatem consequuntur nihil. Pariatur vero nesciunt, voluptas, rem unde provident velit laborum ratione obcaecati veniam inventore ipsa, sint reprehenderit! Harum et eaque reiciendis
-          explicabo molestiae illum amet asperiores placeat suscipit quidem est, fugit incidunt dolorem iure nam aliquid ab? Dolorem, esse vel officia sit quidem earum? Quis inventore sequi nihil voluptatem iure iste! Vero obcaecati dolor
-          nulla nihil officia, sequi sint eveniet voluptate quia tempora corrupti labore quidem libero, saepe iure dolores accusantium perferendis ipsa tempore voluptatum deleniti beatae magnam odio voluptatem? Illo labore deleniti quisquam
-          porro architecto neque veritatis fuga voluptate vero, voluptatum ullam ex. Aut, eligendi tenetur provident distinctio placeat a qui nostrum reprehenderit non aspernatur aliquid omnis eveniet dolorem debitis, ducimus consequuntur
-          expedita saepe sit delectus numquam? Inventore accusantium repellendus unde itaque labore, quis quia iure at non temporibus deserunt harum optio magni vitae veritatis impedit aperiam, velit quo quibusdam minima veniam. Suscipit
-          aperiam, accusamus autem numquam atque, ducimus quaerat ab odio exercitationem vel quod corporis facere expedita? Voluptates libero facere, commodi saepe molestiae, rerum nulla laudantium ut atque minima expedita quo magni. Dolore
-          sunt error qui amet delectus hic maxime repellat, cumque tempora nihil dolorum quia dicta laboriosam perspiciatis eius alias. Harum alias recusandae nostrum placeat, totam, deserunt voluptatem quidem quos mollitia nemo
-          voluptatibus quibusdam quae quis deleniti consequuntur. Magnam totam quibusdam repudiandae obcaecati nostrum sed. Accusamus consequatur eos vel, quibusdam architecto neque et officia at voluptatibus nostrum, harum repellat
-          voluptatem veritatis quidem fugit atque tempora sapiente non cupiditate dolore sequi omnis nam! Quibusdam fugiat dolorem neque ipsa magnam? Nisi veniam dolores repellat nesciunt corporis odit facilis harum ut, eum alias est,
-          necessitatibus qui quos quibusdam! Culpa nostrum blanditiis aliquid provident illum id eius. In nisi ab ullam reiciendis doloremque architecto hic!
-        </p>
-      </section>
-    </>
-  );
+/** Colour ramp for a budget's progress bar based on how much has been used. */
+function budgetTone(budget: Budget) {
+  if (budget.isOverBudget) return "error" as const;
+  if (budget.percentUsed >= 80) return "warning" as const;
+  if (budget.percentUsed >= 50) return "primary" as const;
+  return "secondary" as const;
 }
 
-export default Main;
+export default function Dashboard() {
+  const navigate = useNavigate();
+  const { dashboard, hasLoaded, error } = useFinanceStore();
+
+  if (!hasLoaded) return <LoadingState label="Loading dashboard" />;
+  if (error) return <ErrorBanner message={error} />;
+  if (!dashboard) return null;
+
+  const { baseCurrency, totalBalance, currentMonth, budgets } = dashboard;
+  const activeBudgets = budgets.filter((budget) => budget.isActive);
+
+  const income = currentMonth.totalIncome;
+  const expenses = currentMonth.totalExpenses;
+  const net = currentMonth.netChange;
+
+  // Bars are relative to the largest of the three so they stay comparable.
+  const peak = Math.max(income, expenses, Math.abs(net), 1);
+  const netChangePercent = income > 0 ? (net / income) * 100 : 0;
+
+  return (
+    <div className="flex flex-col gap-gutter">
+      {/* Hero: Net Worth */}
+      <section className="glass-panel flex flex-col items-center gap-8 rounded-xl border-primary/20 bg-surface-bright/20 p-12 text-center md:p-16">
+        <div className="flex flex-col items-center gap-4">
+          <h2 className="font-label-md text-label-md uppercase tracking-[0.2em] text-primary opacity-80">Total Net Worth</h2>
+          <div className="font-headline-xl text-headline-xl text-5xl font-bold tracking-tight text-on-surface md:text-7xl">{formatMoney(totalBalance, baseCurrency)}</div>
+        </div>
+        <div className={`mx-auto flex items-center gap-3 rounded-full px-4 py-2 ${net >= 0 ? "border border-secondary/20 bg-secondary/10" : "border border-error/20 bg-error/10"}`}>
+          <Icon name={net >= 0 ? "trending_up" : "trending_down"} className={net >= 0 ? "text-secondary" : "text-error"} />
+          <span className={`font-label-md text-label-md ${net >= 0 ? "text-secondary" : "text-error"}`}>
+            {net >= 0 ? "+" : ""}
+            {netChangePercent.toFixed(1)}% this month
+          </span>
+        </div>
+      </section>
+
+      {/* Bento Grid */}
+      <section className="grid grid-cols-1 gap-gutter md:grid-cols-3">
+        <div className="glass-panel flex flex-col gap-4 rounded-xl p-6">
+          <div className="flex items-center justify-between">
+            <h3 className="font-label-md text-label-md text-on-surface-variant">Monthly Income</h3>
+            <Icon name="arrow_downward" className="text-primary-fixed-dim" />
+          </div>
+          <div className="font-headline-lg text-headline-lg text-on-surface">{formatMoney(income, baseCurrency)}</div>
+          <div className="mt-2 h-1 w-full rounded-full bg-white/5">
+            <div className="h-full rounded-full bg-primary-fixed-dim" style={{ width: `${(income / peak) * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="glass-panel flex flex-col gap-4 rounded-xl p-6">
+          <div className="flex items-center justify-between">
+            <h3 className="font-label-md text-label-md text-on-surface-variant">Monthly Expenses</h3>
+            <Icon name="arrow_upward" className="text-error" />
+          </div>
+          <div className="font-headline-lg text-headline-lg text-on-surface">{formatMoney(expenses, baseCurrency)}</div>
+          <div className="mt-2 h-1 w-full rounded-full bg-white/5">
+            <div className="h-full rounded-full bg-error" style={{ width: `${(expenses / peak) * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="glass-panel flex flex-col gap-4 rounded-xl p-6">
+          <div className="flex items-center justify-between">
+            <h3 className="font-label-md text-label-md text-on-surface-variant">Net Savings</h3>
+            <Icon name="savings" className="text-secondary" />
+          </div>
+          <div className={`font-headline-lg text-headline-lg ${net >= 0 ? "text-on-surface" : "text-error"}`}>{formatMoney(net, baseCurrency)}</div>
+          <div className="mt-2 h-1 w-full rounded-full bg-white/5">
+            <div className={`h-full rounded-full ${net >= 0 ? "bg-secondary" : "bg-error"}`} style={{ width: `${(Math.abs(net) / peak) * 100}%` }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Budget Status */}
+      <section className="glass-panel flex flex-col gap-6 rounded-xl p-8">
+        <div className="flex items-center justify-between">
+          <h2 className="font-headline-md text-headline-md text-primary">Budget Status</h2>
+          <button type="button" onClick={() => navigate("/budgets")} className="font-label-md text-label-md text-primary-fixed-dim transition-colors hover:text-primary">
+            View All
+          </button>
+        </div>
+
+        {activeBudgets.length === 0 ? (
+          <p className="font-body-md text-body-md text-on-surface-variant opacity-80">No budgets yet. Create one to track your spending limits.</p>
+        ) : (
+          <div className="flex flex-col gap-6">
+            {activeBudgets.map((budget) => (
+              <div key={budget.id} className="group flex flex-col gap-2">
+                <div className="flex items-end justify-between gap-3">
+                  <div className="flex min-w-0 items-center gap-3">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface-container-high">
+                      <Icon name={categoryIcon(budget.categoryName)} size={16} className="text-on-surface-variant" />
+                    </div>
+                    <span className="font-body-md text-body-md truncate text-on-surface">{budget.categoryName}</span>
+                  </div>
+                  <span className="font-body-md text-body-md shrink-0 text-on-surface-variant">
+                    {formatMoney(budget.spent, baseCurrency)} / {formatMoney(budget.amount, baseCurrency)}
+                  </span>
+                </div>
+                <ProgressBar percent={budget.percentUsed} tone={budgetTone(budget)} />
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}

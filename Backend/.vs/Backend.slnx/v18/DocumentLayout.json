@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\enums\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\enums\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFC94A75-2E6B-4B81-A09C-0BF93F3F2BCF}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\user\\desktop\\financial_tracker\\backend\\backend.domain\\common\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,24 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 314,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\Transaction.cs",
+              "RelativeToolTip": "Backend.Domain\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T15:01:48.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\TransactionType.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Enums\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\TransactionType.cs",
+              "RelativeToolTip": "Backend.Domain\\Enums\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T14:59:01.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\Account.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entities\\Account.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\Account.cs",
               "RelativeToolTip": "Backend.Domain\\Entities\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:38:29.516Z",
+              "WhenOpened": "2026-08-26T08:18:54.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Backend.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T08:04:35.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Currency.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\ValueObjects\\Currency.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\ValueObjects\\Currency.cs",
@@ -79,25 +122,11 @@
               "RelativeToolTip": "Backend.Domain\\ValueObjects\\Currency.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:27:50.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T03:27:50.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountType.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\AccountType.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Enums\\AccountType.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\AccountType.cs",
-              "RelativeToolTip": "Backend.Domain\\Enums\\AccountType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:21:33.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuditableEntity.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Common\\AuditableEntity.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Common\\AuditableEntity.cs",
@@ -105,38 +134,23 @@
               "RelativeToolTip": "Backend.Domain\\Common\\AuditableEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:17:50.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T03:17:50.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Common\\Entity.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Common\\Entity.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Common\\Entity.cs",
               "RelativeToolTip": "Backend.Domain\\Common\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:15:08.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T03:15:08.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryType.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\CategoryType.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Enums\\CategoryType.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend.Domain\\Enums\\CategoryType.cs",
-              "RelativeToolTip": "Backend.Domain\\Enums\\CategoryType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T03:26:26.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
@@ -148,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "Backend\\appsettings.json",
@@ -160,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
@@ -172,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Backend.http",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend\\Backend.http",
               "RelativeDocumentMoniker": "Backend\\Backend.http",
@@ -184,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Backend.API",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Financial_Tracker\\Backend\\Backend\\Backend.API.csproj",
               "RelativeDocumentMoniker": "Backend\\Backend.API.csproj",
@@ -192,6 +206,10 @@
               "RelativeToolTip": "Backend\\Backend.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-08-08T14:00:34.47Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://financial-tracker-api-mazd.onrender.com/api/:path*"
+    }
+  ]
+}

@@ -10,24 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install PostgreSQL client
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y postgresql-client
-
       - name: Create database backup
         env:
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          PGSSLMODE: require
         run: |
           mkdir -p backup
 
-          pg_dump \
-            --host=aws-0-ap-southeast-2.pooler.supabase.com \
-            --port=5432 \
-            --username=postgres.prclegyertbdwfsjrvix \
-            --dbname=postgres \
-            --format=custom \
-            --file=backup/financial-tracker-$(date +%Y-%m-%d).dump
+          docker run --rm \
+            -e PGPASSWORD \
+            -e PGSSLMODE \
+            -v "$PWD/backup:/backup" \
+            postgres:17 \
+            pg_dump \
+              --host=aws-0-ap-southeast-2.pooler.supabase.com \
+              --port=5432 \
+              --username=postgres.prclegyertbdwfsjrvix \
+              --dbname=postgres \
+              --format=custom \
+              --file=/backup/financial-tracker-$(date +%Y-%m-%d).dump
 
       - name: Upload backup artifact
         uses: actions/upload-artifact@v4

@@ -339,8 +339,8 @@ export default function Accounts() {
               <Field label="Starting Balance" htmlFor="account-balance" icon="account_balance_wallet">
                 <input
                   id="account-balance"
-                  type="number"
-                  inputMode="decimal"
+                  type="text"
+                  inputMode="text"
                   step="0.01"
                   value={form.initialBalance}
                   onChange={(event) => setForm({ ...form, initialBalance: event.target.value })}
@@ -415,8 +415,8 @@ export default function Accounts() {
               <Field label="Actual Balance" htmlFor="adjust-actual" icon="account_balance_wallet">
                 <input
                   id="adjust-actual"
-                  type="number"
-                  inputMode="decimal"
+                  type="text"
+                  inputMode="text"
                   step="0.01"
                   required
                   value={actualBalance}

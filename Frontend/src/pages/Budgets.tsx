@@ -410,8 +410,8 @@ export default function Budgets() {
           <Field label="Budget Amount" htmlFor="budget-amount" icon="payments">
             <input
               id="budget-amount"
-              type="number"
-              inputMode="decimal"
+              type="text"
+              inputMode="text"
               step="0.01"
               min="0.01"
               required

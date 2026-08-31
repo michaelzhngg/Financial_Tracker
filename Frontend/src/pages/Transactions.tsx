@@ -734,8 +734,8 @@ export default function Transactions() {
               <span className="text-2xl font-semibold leading-none text-on-surface-variant">{currencySymbol(formCurrency)}</span>
               <input
                 required
-                type="number"
-                inputMode="decimal"
+                type="text"
+                inputMode="text"
                 step="0.01"
                 min="0.01"
                 readOnly={Boolean(receipt)}

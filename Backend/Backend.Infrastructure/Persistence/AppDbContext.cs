@@ -30,15 +30,14 @@ public sealed class AppDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
-        // SQLite has no native DateTimeOffset type, so store every timestamp as
-        // UTC ticks. This keeps range comparisons translatable and correctly ordered.
-        var converter = new ValueConverter<DateTimeOffset, long>(
-            value => value.UtcTicks,
-            value => new DateTimeOffset(value, TimeSpan.Zero));
+        // PostgreSQL stores these as timestamptz. Normalize offsets to UTC before writing.
+        var converter = new ValueConverter<DateTimeOffset, DateTime>(
+            value => value.UtcDateTime,
+            value => new DateTimeOffset(DateTime.SpecifyKind(value, DateTimeKind.Utc)));
 
-        var nullableConverter = new ValueConverter<DateTimeOffset?, long?>(
-            value => value == null ? null : value.Value.UtcTicks,
-            value => value == null ? null : new DateTimeOffset(value.Value, TimeSpan.Zero));
+        var nullableConverter = new ValueConverter<DateTimeOffset?, DateTime?>(
+            value => value == null ? null : value.Value.UtcDateTime,
+            value => value == null ? null : new DateTimeOffset(DateTime.SpecifyKind(value.Value, DateTimeKind.Utc)));
 
         foreach (var entityType in modelBuilder.Model.GetEntityTypes())
         {

@@ -13,13 +13,6 @@ public sealed class AuthController : ApiControllerBase
     public AuthController(IAuthService authService) => _authService = authService;
 
     [AllowAnonymous]
-    [HttpPost("register")]
-    public async Task<ActionResult<AuthResponse>> Register(RegisterRequest request, CancellationToken cancellationToken)
-    {
-        return Ok(await _authService.RegisterAsync(request, cancellationToken));
-    }
-
-    [AllowAnonymous]
     [HttpPost("login")]
     public async Task<ActionResult<AuthResponse>> Login(LoginRequest request, CancellationToken cancellationToken)
     {

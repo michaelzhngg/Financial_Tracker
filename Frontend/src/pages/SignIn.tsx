@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
 import { ErrorBanner, Field, fieldInputClass } from "../components/ui";
 import { useAuthStore } from "../store/useAuthStore";
@@ -57,13 +56,6 @@ export default function SignIn() {
             <Icon name="arrow_forward" size={20} />
           </button>
         </form>
-
-        <p className="font-body-md text-body-md mt-8 text-center text-on-surface-variant">
-          No account yet?{" "}
-          <Link to="/register" className="text-primary hover:underline">
-            Create one
-          </Link>
-        </p>
       </div>
     </main>
   );

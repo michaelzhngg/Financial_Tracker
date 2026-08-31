@@ -8,7 +8,6 @@ import Budgets from "./pages/Budgets";
 import Categories from "./pages/Categories";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
-import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
 import Summary from "./pages/Summary";
 import Transactions from "./pages/Transactions";
@@ -39,7 +38,6 @@ function AuthRoutes() {
 
   return (
     <Routes>
-      <Route path="/register" element={<Register />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="*" element={<Navigate to="/signin" replace state={{ from: location.pathname }} />} />
     </Routes>

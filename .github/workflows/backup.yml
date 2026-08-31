@@ -1,0 +1,37 @@
+name: Supabase Database Backup
+
+on:
+  schedule:
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client
+
+      - name: Create database backup
+        env:
+          PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: |
+          mkdir -p backup
+
+          pg_dump \
+            --host=db.prclegyertbdwfsjrvix.supabase.co \
+            --port=5432 \
+            --username=postgres \
+            --dbname=postgres \
+            --format=custom \
+            --file=backup/financial-tracker-$(date +%Y-%m-%d).dump
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: financial-tracker-backup
+          path: backup/
+          retention-days: 30

@@ -58,7 +58,7 @@ function AppShell() {
     <div className="relative min-h-screen pb-[80px] md:pb-0">
       <AtmosphericGlow />
       <TopAppBar />
-      <MobileHeader title={PAGE_TITLES[location.pathname] ?? "Aura Finance"} />
+      <MobileHeader title={PAGE_TITLES[location.pathname] ?? "Financial Tracker"} />
 
       <main className="relative z-10 mx-auto w-full max-w-container-max px-margin-mobile py-8 pb-32 md:px-margin-desktop md:pb-12">
         <Routes>

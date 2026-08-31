@@ -13,7 +13,7 @@ export default function TopAppBar() {
     <header className="sticky top-0 z-40 hidden w-full max-w-container-max mx-auto items-center justify-between border-b border-white/10 bg-white/5 px-margin-desktop py-unit backdrop-blur-xl md:flex">
       <button type="button" onClick={() => navigate("/")} className="flex items-center gap-4">
         <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/20 bg-surface-container text-label-md font-bold text-primary">{initialsOf(user?.displayName ?? "FT")}</div>
-        <span className="font-headline-md text-headline-md font-bold text-primary">Aura Finance</span>
+        <span className="font-headline-md text-headline-md font-bold text-primary">Financial Tracker</span>
       </button>
 
       <nav className="flex items-center gap-8">

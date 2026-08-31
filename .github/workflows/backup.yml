@@ -22,9 +22,9 @@ jobs:
           mkdir -p backup
 
           pg_dump \
-            --host=db.prclegyertbdwfsjrvix.supabase.co \
+            --host=aws-0-ap-southeast-2.pooler.supabase.com \
             --port=5432 \
-            --username=postgres \
+            --username=postgres.prclegyertbdwfsjrvix \
             --dbname=postgres \
             --format=custom \
             --file=backup/financial-tracker-$(date +%Y-%m-%d).dump

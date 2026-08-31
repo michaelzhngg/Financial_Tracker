@@ -7,7 +7,7 @@ interface NumberFieldProps {
   min?: string;
   className?: string;
   placeholder?: string;
-  inputMode?: 'decimal' | 'numeric';
+  inputMode?: 'decimal' | 'numeric' | 'text';
 }
 
 /**
